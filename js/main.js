@@ -11,7 +11,6 @@ const carnet = document.querySelector("#carnet"),
 
 // * Creamos un alert, para cuando le das al No del index
 
-document.getElementById("alerta").addEventListener("click", alerta);
 function alerta() {
   alert("Qué pena que no quieras...Piénsalo y dale al si! ;P");
   return;
