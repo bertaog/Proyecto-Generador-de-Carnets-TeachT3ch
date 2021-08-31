@@ -10,7 +10,6 @@ const carnet = document.querySelector("#carnet"),
   firma = document.querySelector("#carnet .firma p");
 
 // * Creamos un alert, para cuando le das al No del index
-
 function alerta() {
   alert("Qué pena que no quieras...Piénsalo y dale al si! ;P");
   return;
