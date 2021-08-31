@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Título de la página-->
+    <title>Generador de Carnets TeachT3ch</title>
+
+    <!--Fuentes de la página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Meddon&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Llamada a la hoja de estilos-->
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <!--BANDA INICIAL LOGO-->
+
+      <section
+        class="fndCabecera"
+        style="background-image: url(img/fnd_banda_inicio.jpg);"
+      >
+        <div class="contenidoCabecera">
+          <div class="textoCabecera">
+            <div class="logoCabecera">
+              <img src="img/logo.png" alt="Logotipo TeachT3ch" />
+            </div>
+            <div class="titulo2">
+              <h1>TE AYUDARÁ</h1>
+            </div>
+          </div>
+        </div>
+        <i class="fas fa-angle-down"></i>
+      </section>
+
+      <!--BLOQUES DE TEXTO QUE APARECEN-->
+
+      <section class="seccion">
+        <div class="subcont">
+          <!-- TEXTO Y FOTO DE DOS COLUMNAS IGUALES -->
+          <div class="cols2 center marco">
+            <div class="col colimg contenedorFoto aparece-izquierda">
+              <div class="imagen">
+                <img src="img/html.jpg" class="imgcover absoluta" alt="" />
+              </div>
+            </div>
+            <!-- Añadir clase reverse para invertir -->
+            <div class="col">
+              <div class="textoCol">
+                <h2 class="titulo1">HTML: Ejecuta tu plan</h2>
+
+                <p>
+                  Lo harás con HTML, que es un lenguaje informático con el cual
+                  nos comunicamos con el ordenador para decirle que haga lo que
+                  nosotros queremos. Lo de "lenguaje" indica que nos
+                  comunicaremos con el ordenador por medio de palabras y signos
+                  de escritura. HTML es el principal lenguaje en el que se
+                  escriben las páginas web, y por lo tanto el que entienden los
+                  navegadores o dispositivos donde se visualizan las páginas
+                  web.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cols center marco">
+            <div class="col">
+              <!-- Añadir clase reverse para invertir -->
+              <div class="aparece-izquierda">
+                <h2 class="titulo1">Pinta y colorea tus diseños</h2>
+
+                <p>
+                  El CSS (hojas de estilo en cascada) es un lenguaje que define
+                  la apariencia de un documento escrito en un lenguaje de
+                  marcado (por ejemplo, HTML).
+                </p>
+
+                <p>
+                  Así, a los elementos de la página web creados con HTML se les
+                  dará la apariencia que se desee utilizando CSS: colores,
+                  espacios entre elementos, tipos de letra, ... separando de
+                  esta forma la estructura de la presentación.
+                </p>
+              </div>
+            </div>
+            <div class="col colimg aparece-derecha">
+              <div>
+                <img src="img/css.jpg" class="imgcover" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="cols reverse center marco">
+            <div class="col">
+              <!-- Añadir clase reverse para invertir -->
+              <div class="aparece-derecha">
+                <h2 class="titulo1">Movimiento y acción</h2>
+
+                <p>
+                  JavaScript es un lenguaje de programación o de secuencias de
+                  comandos que te permite implementar funciones complejas en
+                  páginas web, cada vez que una página web hace algo más que
+                  sentarse allí y mostrar información estática para que la veas,
+                  muestra oportunas actualizaciones de contenido, mapas
+                  interactivos, animación de Gráficos 2D/3D, desplazamiento de
+                  máquinas reproductoras de vídeo, etc., puedes apostar que
+                  probablemente JavaScript está involucrado. Es la tercera capa
+                  del pastel de las tecnologías web estándar, dos de las cuales
+                  (HTML y CSS) hemos cubierto con mucho más detalle en otras
+                  partes del Área de aprendizaje.
+                </p>
+              </div>
+            </div>
+            <div class="col colimg">
+              <div class="fotoJs aparece-izquierda">
+                <img src="img/js.jpg" class="imgcover imgIzq" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--BANDA CONTADORES-->
+      <div id="counter" class="contadores">
+        <div>
+          <div class="contador">
+            <div class="counter-value" data-count="30">0</div>
+            <p>alumnos</p>
+          </div>
+        </div>
+        <div>
+          <div class="contador">
+            <div class="counter-value" data-count="18">0</div>
+            <p>profesores</p>
+          </div>
+        </div>
+        <div>
+          <div class="contador">
+            <div class="counter-value" data-count="30">0</div>
+            <p>mentores</p>
+          </div>
+        </div>
+      </div>
+
+      <!--BANDA DE TEXTO-->
+      <div class="bandaNegra">
+        <div class="titulo3 aparece-fondo">
+          <p>10 semanas después ¡LO HAS CONSEGUIDO!</p>
+        </div>
+      </div>
+
+      <!--BANDA GENERADOR DE CARNETS-->
+      <div class="fondoGenerador">
+        <div class="contenedorGenerador">
+          <!--Título Sección-->
+          <div id="tituloFormulario">
+            <h1>
+              Consigue el carnet que te dará acceso a la magia de la
+              programación
+            </h1>
+          </div>
+
+          <!--Formulario-->
+          <form action="" id="formularioCarnet" class="formularioCarnet">
+            <div class="contenedorSelectores">
+              <div class="grupoForm">
+                <label for="selectMiembro">Tipo de miembro</label>
+                <select name="miembro" id="selectMiembro">
+                  <option disabled selected>Tu papel en el curso</option>
+                  <option value="Alumna">Alumna</option>
+                  <option value="Alumno">Alumno</option>
+                  <option value="Profesora">Profesora</option>
+                  <option value="Profesor">Profesor</option>
+                  <option value="Mentora">Mentora</option>
+                  <option value="Mentor">Mentor</option>
+                </select>
+              </div>
+              <div class="grupoForm">
+                <label for="selectCasa">Casa a la que perteneces</label>
+                <select name="casa" id="selectCasa">
+                  <option disabled selected>Tu casa</option>
+                  <option value="Gryffindor">Gryffindor</option>
+                  <option value="Slytherin">Slytherin</option>
+                </select>
+              </div>
+
+              <div class="elementoForm">
+                <label for="inputNombre">Nombre</label>
+                <input type="text" id="inputNombre" maxlength="40" />
+              </div>
+
+              <div class="elementoForm">
+                <label for="inputApellidos">Apellidos</label>
+                <input type="text" id="inputApellidos" maxlength="40" />
+              </div>
+
+              <!--  <div class="contenedorBoton">
+                <button type="submit" class="btnGenerar">
+                  GENERAR EL CARNET
+                </button>
+              </div> -->
+            </div>
+          </form>
+
+          <!-- Carnet -->
+          <div class="contenedorCarnet">
+            <section class="carnet" id="carnet">
+              <!--Si quitamos el active se muestra la parte delantera del Carnet y activo, mostrará la trasera-->
+
+              <!--Parte Delantera del Carnet-->
+              <div class="delantera">
+                <div class="datos">
+                  <div class="datosArriba">
+                    <div class="foto" id="foto">
+                      <img src="img/fotos/foto_mascota.jpg" alt="" />
+                    </div>
+                    <div class="grupoCarnet" id="usuario">
+                      <span class="label" id="tipoUsuario">Alumna</span>
+                      <span class="label" id="escuelaUsuario">Slytherin</span>
+                    </div>
+                  </div>
+
+                  <div class="flexbox">
+                    <div class="grupoCarnet" id="nombreApellidos">
+                      <p class="label">Nombre</p>
+                      <p class="nombre" id="nombre">Berta</p>
+                      <p class="label">Apellidos</p>
+                      <p class="nombre" id="apellidos">Otero Garrido</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Parte Trasera del Carnet-->
+              <div class="trasera">
+                <div class="barra-magnetica"></div>
+
+                <div class="datos">
+                  <div class="grupoCarnet">
+                    <div class="escudo" id="escudoCasa">
+                      <!-- <img src="img/Esc_Slytherin.png" alt="" />-->
+                    </div>
+                  </div>
+
+                  <div class="grupoCarnet" id="firma">
+                    <span class="label">Firma</span>
+                    <div class="firma"><p></p></div>
+                    <div class="leyenda">
+                      <p id="leyendaCasa">
+                        <!--Como miembro de Slytherin eres ambicioso, inteligente, muy
+                        astuto y tiendes a ser un líder fuerte.-->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!--Llamada al fontawesome para que funcionen los iconos-->
+      <script
+        src="https://kit.fontawesome.com/2c36e9b7b1.js"
+        crossorigin="anonymous"
+      ></script>
+      <!--Llamada al Javascript-->
+      <script src="js/main.js"></script>
+      <!-- Js para que funcione la web bien en todos los dispositivos-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/contadores.js"></script>
+      <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+      <script src="js/scrollreveal.js"></script>
+    </main>
+  </body>
+</html>
