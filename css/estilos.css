@@ -1,0 +1,587 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Courier Prime", monospace;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ---------- BANDA PÁGINA INICIO----------*/
+
+/* Banda con fondo y texto */
+
+.contenedorBotones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bndfndtexto {
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  min-height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bndfndtexto:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.bndfndtexto .bndfndtexto-cont {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.bndfndtexto .bndfndtexto-cont .bndfndtexto-cont-info {
+  color: white;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.bndfndtexto .bndfndtexto-cont .bndfndtexto-cont-btn a {
+  display: inline-block;
+  padding: 8px 24px;
+  margin: 0 5px 0 5px;
+  font-size: 20px;
+  border: 2px solid white;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+.bndfndtexto .bndfndtexto-cont .bndfndtexto-cont-btn a:hover {
+  background: #f18307;
+  border: 2px solid #f18307;
+  color: white;
+}
+
+.bndfndtexto .bndfndtexto-cont .bndfndtexto-cont-btn .btnActivo {
+  color: #f18307;
+  border: 2px solid #f18307;
+}
+
+/* ---------- BANDA CABECERA GENERADOR DE CARNETS----------*/
+
+/* Banda con fondo y texto */
+
+.fndCabecera {
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  min-height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fndCabecera .contenidoCabecera {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.fndCabecera .contenidoCabecera .textoCabecera {
+  color: white;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.fndCabecera i {
+  position: absolute;
+  color: #f18307;
+  font-size: 74px;
+  bottom: -12px;
+}
+
+.fndCabecera .contenidoCabecera .titulo2 {
+  width: 250px;
+  color: white;
+  background-color: #000;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.fndCabecera .contenidoCabecera .logoCabecera img {
+  max-width: 250px;
+  display: block;
+  padding-bottom: 15px;
+}
+
+/*-----------BANDA TEXTO Y FOTO--------------*/
+
+.seccion {
+  padding: 40px 20px;
+}
+
+.subcont {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imgcover {
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Columnas banda HTML Y JS */
+.cols2 {
+  display: flex;
+  justify-content: space-around;
+}
+.cols2:not(:last-child) {
+  margin: 0 0 30px;
+}
+.cols2 .col {
+  width: calc(50% - 12px);
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+.cols2.center .col:not(.colimg) {
+  justify-content: center;
+} /* Centrar el texto verticalmente respecto a la imagen */
+.cols2 .colimg .imagen {
+  flex: 1;
+  position: relative;
+}
+.cols2 .colimg .absoluta {
+  position: absolute;
+}
+.reverse {
+  flex-direction: row-reverse;
+} /* Para voltear horizontalmente en PC*/
+
+.textoCol {
+  padding: 40px 80px 40px 40px;
+  border: 2px solid #f19066;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.cols2 .contenedorFoto {
+  width: calc(100% - 600px);
+}
+.cols2 .marco.reverse > div:first-child {
+  padding: 40px 40px 40px 80px;
+  margin-left: -100px;
+  margin-right: 0;
+}
+
+.imgIzq {
+  margin-left: 136px;
+}
+
+.fotoJs {
+}
+
+/* Columnas banda css */
+.cols {
+  display: flex;
+  justify-content: space-around;
+}
+.cols:not(:last-child) {
+  margin: 0 0 30px;
+}
+.cols .col {
+  width: calc(50% - 12px);
+  display: flex;
+  flex-direction: column;
+}
+.cols.center .col:not(.colimg) {
+  justify-content: center;
+} /* Centrar el texto verticalmente respecto a la imagen */
+.cols .colimg > div {
+  flex: 1;
+  position: relative;
+}
+.cols .colimg > div img {
+  position: absolute;
+}
+.reverse {
+  flex-direction: row-reverse;
+} /* Para voltear horizontalmente en PC*/
+
+.cols.marco > div:first-child {
+  padding: 40px 80px 40px 40px;
+  border: 2px solid #f19066;
+  margin-right: -186px;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+}
+.cols.marco .colimg {
+  padding: 60px 0;
+  width: calc(100% - 600px);
+}
+.cols.marco.reverse > div:first-child {
+  padding: 40px 40px 40px 80px;
+  margin-left: -100px;
+  margin-right: 0;
+}
+
+/*---------- BANDA CONTADORES -------------*/
+
+.contadores {
+  display: Flex;
+  justify-content: Space-between;
+  flex-flow: row wrap;
+  background: #f18307;
+}
+.contadores > div {
+  width: calc(33.33% - 20px);
+  padding: 32px;
+  text-align: center;
+}
+
+.contadores .contador {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  flex-flow: column;
+}
+
+.contadores .contador > div {
+  margin-right: 12px;
+}
+.contadores .contador > div.counter-value {
+  font-size: 55px;
+  line-height: 90%;
+  color: white;
+}
+
+/*----------- BANDA NEGRA-----------*/
+
+.bandaNegra {
+  background-image: url(../img/fnd_negro.jpg);
+
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bandaNegra .titulo3 {
+  width: 500px;
+  color: #f18307;
+  background-color: #000;
+  padding: 5px;
+  font-size: 38px;
+  text-align: center;
+}
+
+/* ---------- BANDA GENERADOR DE CARNETS ----------*/
+.fondoGenerador {
+  background: url(../img/fnd_gris.jpg);
+}
+
+.contenedorGenerador {
+  width: 90%;
+  margin: 0 auto; /* Centrado del contenedor */
+  max-width: 1000px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column; /* Elementos se desplieguen en columna, unos después de los otros */
+  align-items: center; /* Centrar de forma horizontal, porque cambiamos la forma de alinear a columna */
+}
+
+#tituloFormulario {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 25px;
+  color: rgb(87, 87, 87);
+}
+
+/* ---------- Formulario Carnet ----------*/
+
+.formularioCarnet {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.formularioCarnet .elementoForm {
+  width: 100%;
+}
+
+.formularioCarnet label {
+  display: block;
+  color: #f18307;
+  margin: 5px;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.formularioCarnet input,
+.formularioCarnet select,
+.btnGenerar {
+  border: 2px solid #ced6e0;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-family: "Courier Prime", monospace;
+  font-size: 16px;
+}
+
+.formularioCarnet input:hover,
+.formularioCarnet select:hover {
+  border: 2px solid rgb(204, 84, 4);
+}
+
+.formularioCarnet input:focus,
+.formularioCarnet select:focus {
+  outline: rgb(4, 4, 4);
+  box-shadow: 1px 7px 10px -5px rgba(66, 66, 66, 0.3);
+}
+
+.formularioCarnet .contenedorSelectores .grupoForm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 49%;
+}
+
+.formularioCarnet .contenedorSelectores {
+  width: 100%;
+  margin-right: 15px;
+  position: relative; /*Para posicionar la flecha*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.formularioCarnet .contenedorBoton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.formularioCarnet .contenedorBoton .btnGenerar {
+  background-color: darkorange;
+  cursor: pointer;
+  margin: 25px;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 23px;
+  max-width: 200px;
+  min-height: 90px;
+  border-radius: 5px;
+  box-shadow: 1px 7px 10px -5px rgba(85, 85, 85, 0.4);
+}
+
+.formularioCarnet .contenedorBoton .btnGenerar:hover {
+  background-color: #6d3e00;
+  color: #fff;
+}
+
+/*-----------Estilos generales de CARNET--------------------*/
+
+.carnet {
+  width: 100%;
+  max-width: 550px;
+  position: relative; /*Para subir el reverso a la capa superior*/
+  color: #fff;
+  transition: 0.3s ease all;
+  transform: rotateY(0deg); /* Por defecto giro 0 grados */
+  transform-style: preserve-3d; /* Efecto giro */
+  cursor: pointer;
+  z-index: 2; /* Posición de enmedio */
+}
+
+.carnet.active {
+  transform: rotateY(180deg); /* Para que rote 180 cuando esté active*/
+}
+
+.carnet > div {
+  /* estilos para los divs que están dentro de .carnet tanto en la trasera y la delantera */
+  padding: 18px;
+  border-radius: 15px;
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 10px 0 rgba(10, 10, 10, 0.3);
+}
+
+/* ---------- Anverso del Carnet ----------*/
+
+.contenedorCarnet {
+  padding: 30px 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorCarnet .delantera {
+  width: 100%;
+  background: url(../img/carnet_anverso.jpg);
+  background-size: cover;
+  min-width: 550px;
+}
+
+.contenedorCarnet .delantera .datosArriba {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.delantera .foto {
+  text-align: left;
+  min-height: 50px;
+  padding-right: 15px;
+}
+
+.contenedorCarnet .delantera .datosArriba .foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 120px;
+  border: 4px solid #f18307;
+}
+
+.delantera .grupoCarnet .label {
+  font-size: 22px;
+  color: #f18307;
+  margin-bottom: 5px;
+}
+
+.delantera .grupoCarnet .nombre {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.delantera .flexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#tipoUsuario {
+  text-transform: uppercase;
+  font-size: 30px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+#escuelaUsuario {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* ---------- Reverso del Carnet ----------*/
+
+.trasera {
+  background: url(../img/carnet_reverso.jpg);
+  background-size: cover;
+  position: absolute; /*Colocar en la parte superior del contenedor carnet, encima de la delantera*/
+  top: 0;
+  transform: rotateY(180deg); /*Rotar  el carnet 180 grados en eje vertical*/
+  backface-visibility: hidden; /*La parte de atrás queda oculta*/
+  width: 100%;
+}
+
+.trasera .barra-magnetica {
+  height: 40px;
+  background: #000;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.trasera .escudo {
+  text-align: left;
+  min-height: 50px;
+  padding: 30px 0 10px 0;
+}
+
+.trasera .escudo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 200px;
+}
+
+.trasera .datos {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trasera .datos p {
+  margin-bottom: 5px;
+}
+
+.trasera .datos #firma {
+  width: 70%;
+}
+
+.trasera .datos #firma .firma {
+  height: 40px;
+  background: repeating-linear-gradient(
+    white 0,
+    white 5px,
+    #facb95 5px,
+    #facb95 10px
+  );
+}
+
+.trasera .datos #firma .firma p {
+  line-height: 40px;
+  font-family: "Meddon", cursive;
+  color: #000;
+  font-size: 28px;
+  padding: 0 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.trasera .datos .label {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.trasera .leyenda {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  padding-top: 20px;
+}
+
+/* CONTADORES AL HACER SCROLL */
