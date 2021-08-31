@@ -9,6 +9,14 @@ const carnet = document.querySelector("#carnet"),
   foto = document.querySelector("#carnet #foto"),
   firma = document.querySelector("#carnet .firma p");
 
+// * Creamos un alert, para cuando le das al No del index
+
+document.getElementById("alerta").addEventListener("click", alerta);
+function alerta() {
+  alert("Qué pena que no quieras...Piénsalo y dale al si! ;P");
+  return;
+}
+
 // * Damos la vuelta al carnet para mostrar el frente.
 const mostrarFrente = () => {
   if (carnet.classList.contains("active")) {
