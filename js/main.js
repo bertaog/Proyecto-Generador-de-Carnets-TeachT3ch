@@ -91,7 +91,7 @@ formulario.selectMiembro.addEventListener("change", (e) => {
   } else if (miembroCurso == "Mentor") {
     foto.innerHTML = "";
     const imgFoto = document.createElement("img");
-    imgFoto.src = "img/fotos/foto_mentora.jpg";
+    imgFoto.src = "img/fotos/mentor.jpg";
     foto.appendChild(imgFoto);
   }
 
